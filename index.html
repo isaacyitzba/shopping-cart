@@ -43,6 +43,7 @@
   <div class="container">
     <div class="shopping-cart">
       <p class="cart-title">Items in Cart</p>
+      <!-- append here -->
       <div class="cart-list"></div>
       <p>Total: $<span class="total">0</span></p>
       <button class="btn clear-cart">Clear Cart</button>
@@ -52,7 +53,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card-container">
-          <div class="card item" item data-name="glass" data-price="68">
+          <div class="card item"  item data-name="glass" data-price="68">
             <div class="pricebox">
               <p class="price"> $68 </p>
             </div>
@@ -150,6 +151,10 @@
       </div>
     </div>
   </div>
+
+  <script id="cart-template" type="text/x-handlebars-template">
+    <p> {{name}} - ${{price}}</p>
+  </script>
 
   <script type="text/javascript" src="script.js"></script>
 </body>
